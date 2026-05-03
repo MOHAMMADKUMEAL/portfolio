@@ -27,16 +27,20 @@ export default function Hero() {
     <section className="relative h-screen w-full overflow-hidden">
 
       {/* 🎥 Background Video */}
-      <video
-        ref={videoRef}
-        loop
-        muted
-        playsInline
-        className="absolute w-full h-full object-cover object-[center_20%]"
-      >
-        <source src="/hero.webm" type="video/webm" />
-        <source src="/hero.mp4" type="video/mp4" />
-      </video>
+      <div className="absolute inset-0 overflow-hidden">
+
+  <video
+    ref={videoRef}
+    loop
+    muted
+    playsInline
+    className="w-full h-full object-cover object-center md:object-[center_20%] scale-125 md:scale-100"
+  >
+    <source src="/hero.webm" type="video/webm" />
+    <source src="/hero.mp4" type="video/mp4" />
+  </video>
+
+</div>
 
       {/* 🌑 Overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black"></div>
