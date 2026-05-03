@@ -2,7 +2,7 @@ export default function Experience() {
   return (
     <section id="experience" className="w-full py-24 bg-zinc-950 text-white">
 
-      <div className="max-w-6xl mx-auto px-6">
+      <div className="max-w-6xl mx-auto px-4 md:px-10">
 
         {/* Title */}
         <h2 className="text-3xl md:text-5xl font-bold text-center">
@@ -54,14 +54,24 @@ export default function Experience() {
 
               <div className="p-4 border border-white/10 rounded-lg hover:border-blue-500 transition">
                 <p className="font-medium">Offer Letter</p>
-                <a href="/offer-letter.pdf" target="_blank" className="text-blue-400 text-sm">
+                <a
+                  href="/offer-letter.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-400 text-sm"
+                >
                   View Document
                 </a>
               </div>
 
               <div className="p-4 border border-white/10 rounded-lg hover:border-blue-500 transition">
                 <p className="font-medium">Experience Letter</p>
-                <a href="/experience-letter.pdf" target="_blank" className="text-blue-400 text-sm">
+                <a
+                  href="/experience-letter.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-400 text-sm"
+                >
                   View Document
                 </a>
               </div>
