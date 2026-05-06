@@ -34,7 +34,7 @@ export default function Hero() {
     loop
     muted
     playsInline
-    className="w-full h-full object-cover object-center md:object-[center_20%] scale-125 md:scale-100"
+    className="w-full h-full object-cover md:object-cover object-[center] md:object-[center_20%] min-h-[100vh]"
   >
     <source src="/hero.webm" type="video/webm" />
     <source src="/hero.mp4" type="video/mp4" />
