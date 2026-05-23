@@ -6,6 +6,15 @@ function Card({ p }) {
       <h4 className="text-lg font-semibold">{p.title}</h4>
       <p className="text-sm text-gray-400">{p.tech}</p>
       <p className="mt-2 text-gray-300">{p.desc}</p>
+      <a
+  href={p.github}
+  target="_blank"
+  rel="noreferrer"
+>
+  <button className="mt-4 px-4 py-2 bg-blue-500 hover:bg-blue-600 rounded-lg glow-btn">
+    GitHub
+  </button>
+</a>
     </div>
   );
 }
